@@ -20,7 +20,7 @@ type Props = {
   itemTextSize?: number,
   selectedItem?: number,
   backgroundColor?: string,
-  onItemSelected?: (number) => void,
+  onItemSelected?: (number: any) => void,
   disabled?: boolean,
 }
 
