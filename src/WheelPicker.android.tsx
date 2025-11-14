@@ -6,7 +6,7 @@
 import React from 'react'
 import { requireNativeComponent, View } from 'react-native'
 
-const WheelPickerView = requireNativeComponent('WheelPicker', null)
+const WheelPickerView: any = requireNativeComponent('WheelPicker', null)
 
 type Props = {
   data: Array<string>,
@@ -20,7 +20,7 @@ type Props = {
   itemTextSize?: number,
   selectedItem?: number,
   backgroundColor?: string,
-  onItemSelected?: number => void,
+  onItemSelected?: (number) => void,
   disabled?: boolean,
 }
 
